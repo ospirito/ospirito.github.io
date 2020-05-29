@@ -1,0 +1,46 @@
+.bookmarklet{
+    text-decoration: none;
+    color: black;
+    background-color: #d8d4d4;
+    font-family: sans-serif;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+    outline: 1px solid black;
+    padding: 10px;
+    box-shadow: 2px;
+  }
+  
+  .bookmarklet:hover span{
+    display: none;
+  }
+  
+  .bookmarklet:hover{
+    background-color: #727272;
+  }
+  
+  
+  .bookmarklet:hover::after{
+    content: "Drag Me ➚";
+    color: black;
+  }
+  
+  .instructions{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .inline-img{
+    max-height: 150px;
+    display: float;
+    text-align: left;
+  }
+  
+  .description{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
