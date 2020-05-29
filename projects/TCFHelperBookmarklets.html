@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TCF Helper Bookmarklets</title>
+    <style>
+        .bookmarklet{
+          text-decoration: none;
+          color: black;
+          background-color: #d8d4d4;
+          font-family: sans-serif;
+          display: block;
+          width: 200px;
+          text-align: center;
+          margin-bottom: 15px;
+          outline: 1px solid black;
+          padding: 10px;
+          box-shadow: 2px;
+        }
+        
+        .bookmarklet:hover span{
+          display: none;
+        }
+        
+        .bookmarklet:hover{
+          background-color: #727272;
+        }
+        
+        
+        .bookmarklet:hover::after{
+          content: "Drag Me ➚";
+          color: black;
+        }
+        
+        .instructions{
+          font-family: sans-serif;
+          font-size: 1.5em;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        
+        .inline-img{
+          max-height: 150px;
+          display: float;
+          text-align: left;
+        }
+        
+        .description{
+          font-family: sans-serif;
+          margin-bottom: 10px;
+          margin-top: 30px;
+        }
+        </style>
+  </head>
+  <body>
+    <div class="instructions">
+        Drag these to your bookmarks bar!
+        </div>
+        
+        <div class="description">
+        Highlight the Banner text and then click on this bookmark to compare to the stock text.
+        </div>
+        
+        
+        <a class="bookmarklet"href='javascript: (function(){let a=window.getSelection().toString();return""==a?void alert("Highlight some text first!"):void(a=="We use web tracking technologies to store unique identifiers and browsing data to personalize content and analyze site traffic. This information is shared with advertising and analytics partners based on consent or legitimate interest. You may exercise your right to consent or object at any time on the basis of legitimate interest by selecting the \u2018List of Partners\u2019 link here or by clicking the \u2018Manage Preferences\u2019 button located on every page of our site. We work in coordination with an industry framework, signaling your preferences globally for all participating websites."?alert("%E2%9C%85 Banner Text Matches"):alert("%E2%9D%8C Text does not match"))})();'>
+        <span>Compare Banner Text</span>
+        </a>
+        
+        
+        <div class="description">
+        Highlight the Preference Center text and then click on this bookmark to compare to the stock text.
+        </div>
+        
+        <a class="bookmarklet" href='javascript: (function(){let a=window.getSelection().toString();return""==a?void alert("Highlight some text first!"):void(a=="We process your data to deliver content or advertisements and measure the delivery of such content or advertisements to extract insights about our website. We share this information with our partners on the basis of consent and legitimate interest. You may exercise your right to consent or object to a legitimate interest, based on a specific purpose below or at a partner level in the link under each purpose. These choices will be signaled globally to other websites participating in the Transparency and Consent Framework."?alert("Banner Text Matches %E2%9C%85"):alert("%E2%9D%8C Text does not match"))})();'><span class="bkText">Compare PC Text</span></a>
+        
+        <div class="description">
+        Run this on a page with OT's Cookie Consent module. It will read the cookies and tell you what script version it's running.
+        </div>
+        
+        <a class="bookmarklet" href='javascript: (function(){var a=document.cookie.split(";"),b=a.filter(a=>a.includes("OptanonConsent")),c=b.map(a=>a.match(/version=(.*?)&/)[1]);alert("Versions Detected:\n"+c.join("\n"))})();'><span>Detect CC Version</span></a>
+  
+  </body>
+</html>
