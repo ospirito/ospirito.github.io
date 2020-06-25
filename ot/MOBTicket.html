@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="MOBTicket.css" type="text/css">
+  <script src="MOBTicket.js"></script>
+  </head>
+  <body>
+
+    <div class="question radio required">
+        <label>Are you able to reproduce the issue in the demo app?</label>
+        <input name="reproduce" id="rad1" type="radio" value="Yes"><label for="rad1">Yes</label>
+        <input name="reproduce" id="rad2" type="radio" value="No"><label for="rad2">No</label>
+      </div>
+      
+      <div class="question radio required">
+        <label>Web SDK or Native SDK?</label>
+        <input name="sdkVariant" type="radio" id="sdk_web"><label for="sdk_web">Web SDK</label>
+        <input name="sdkVariant" type="radio" id="sdk_native"><label for="sdk_native">Native SDK</label>
+      </div>
+      
+      <div class="question radio required">
+        <label>Platform?</label>
+        <input name="platform" type="radio" id="sdk_ios"><label for="sdk_ios">iOS</label>
+        <input name="platform" type="radio" id="sdk_android"><label for="sdk_android">Android</label>
+      </div>
+      
+      <div class="question text required">
+        <label>Are frameworks being used, or is the app natively written?</label>
+        <input style="width: 200px;" placeholder="(ex. React Native, Xamarin, Native Swift)">
+      </div>
+      
+      <div class="question text required">
+        <label>SDK Version Used</label>
+        <input style="width: 75px;" placeholder="(ex. 6.2.2)">
+      </div>
+      
+      <div class="question text required ios hidden">
+        <label>XCode Version</label>
+        <input style="width: 75px;" placeholder="(ex. 11.4.3)">
+      </div>
+      
+      <div class="question radio required ios hidden">
+        <label>Bitcode Enabled/Disabled</label>
+        <input name="bitcode" type="radio" id="bitcode_enabled"><label for="bitcode_enabled">Enabled</label>
+        <input name="bitcode" type="radio" id="bitcode_disabled"><label for="bitcode_disabled">Disabled</label>
+      </div>
+      
+      <div class="question radio required android hidden">
+        <label>Support Library</label>
+        <input name="android_sup" type="radio" id="dotsupport"><label for="dotsupport">Android.Support</label>
+        <input name="android_sup" type="radio" id="androidx"><label for="androidx">AndroidX</label>
+      </div>
+      
+      <div class="question text required">
+        <label>JSUrl</label>
+        <input style="width: 400px;" placeholder="(ex. https://cdn.cookielaw.org/scripttemplates/otSDKStub.js)">
+      </div>
+      
+      <div class="question text required">
+        <label>App ID</label>
+        <input style="width: 350px;">
+      </div>
+      
+      <div class="question radio required">
+        <label>Is the customer using a VPN?</label>
+        <input name="vpn" id="vpny" type="radio" value="Yes"><label for="vpny">Yes</label>
+        <input name="vpn" id="vpnn" type="radio" value="No"><label for="vpnn">No</label>
+      </div>
+      
+      <div class="question radio required">
+        <label>Is the customer using Custom CSS?</label>
+        <input name="css" id="cssy" type="radio" value="Yes"><label for="cssy">Yes</label>
+        <input name="css" id="cssn" type="radio" value="No"><label for="cssn">No</label>
+      </div>
+      
+      <div class="question text">
+        <label>Device Model</label>
+        <input style="width: 150px;" placeholder="(ex. iPhone 11 Pro)">
+      </div>
+      
+      <div class="question text">
+        <label>Java API Version/iOS Version</label>
+        <input style="width: 150px;" placeholder="(ex. iOS 14)">
+      </div>
+      
+      <div style="margin-top: 15px; color: green;">
+      Remember to include relevant logs and a screenshot of the Geolocation rules in your submission.
+      </div>
+      
+      <br>
+      <button onclick="generateMarkdown()">
+      Generate Markdown
+      </button>
+      <br>
+      <br>
+      <textarea id="output" style="width: 550px; height: 200px;"></textarea>
+  
+  </body>
+</html>
