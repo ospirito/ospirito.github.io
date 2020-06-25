@@ -1,4 +1,4 @@
-document.querySelectorAll("input[name='platform']").forEach(m=>{m.addEventListener("change",showHideQuestions)})
+(function(){document.querySelectorAll("input[name='platform']").forEach(m=>{m.addEventListener("change",showHideQuestions)})}())
 
 function showHideQuestions() {
     let radio = document.querySelector("input[name='platform']:checked")
