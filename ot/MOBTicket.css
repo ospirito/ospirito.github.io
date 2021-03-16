@@ -31,4 +31,17 @@ div{
   display: none;
 }
 
+table, tr, td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: lightgray
+}
+
+td, th{
+  padding: 5px;
+}
+
 
