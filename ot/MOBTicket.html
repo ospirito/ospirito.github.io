@@ -27,18 +27,30 @@
       </div>
       
       <div class="question text required">
-        <label>Are frameworks being used, or is the app natively written?</label>
+        <label>Are any hybrid frameworks being used, or is the app natively written?</label>
         <input style="width: 200px;" placeholder="(ex. React Native, Xamarin, Native Swift)">
       </div>
       
       <div class="question text required">
         <label>SDK Version Used</label>
-        <input style="width: 75px;" placeholder="(ex. 6.2.2)">
+        <input style="width: 75px;" placeholder="(ex. 6.15.0)">
+      </div>
+
+      <div class="question radio required">
+        <label>Installation method</label>
+        <input name="installation" type="radio" id="manualIntegration"><label for="manualIntegration">Manual Integration (from .zip file)</label>
+        <input name="installation" type="radio" id="packageManager"><label for="packageManager">Package Manager (Maven, Cocoapods)</label>
       </div>
       
+      <div class="question radio required ios hidden">
+        <label>Framework Type</label>
+        <input name="framework-ios" type="radio" id="xcf"><label for="xcf">XCFramework</label>
+        <input name="framework-ios" type="radio" id="framework"><label for="framework">Framework</label>
+      </div>
+
       <div class="question text required ios hidden">
         <label>XCode Version</label>
-        <input style="width: 75px;" placeholder="(ex. 11.4.3)">
+        <input style="width: 75px;" placeholder="(ex. 12.2.0)">
       </div>
       
       <div class="question radio required ios hidden">
@@ -54,8 +66,8 @@
       </div>
       
       <div class="question text required">
-        <label>JSUrl</label>
-        <input style="width: 400px;" placeholder="(ex. https://cdn.cookielaw.org/scripttemplates/otSDKStub.js)">
+        <label>Storage Location</label>
+        <input style="width: 400px;" placeholder="(ex. cdn.cookielaw.org)">
       </div>
       
       <div class="question text required">
@@ -70,9 +82,9 @@
       </div>
       
       <div class="question radio required">
-        <label>Is the customer using Custom CSS?</label>
-        <input name="css" id="cssy" type="radio" value="Yes"><label for="cssy">Yes</label>
-        <input name="css" id="cssn" type="radio" value="No"><label for="cssn">No</label>
+        <label>Does the customer use custom UXParams?</label>
+        <input name="uxParams" id="uxParamsY" type="radio" value="Yes"><label for="uxParamsY">Yes</label>
+        <input name="uxParams" id="uxParamsN" type="radio" value="No"><label for="uxParamsN">No</label>
       </div>
       
       <div class="question text">
@@ -85,17 +97,19 @@
         <input style="width: 150px;" placeholder="(ex. iOS 14)">
       </div>
       
-      <div style="margin-top: 15px; color: green;">
+      <p style="margin-top: 15px; color: blue;">
       Remember to include relevant logs and a screenshot of the Geolocation rules in your submission.
-      </div>
-      
+      </p>
       <br>
-      <button onclick="generateMarkdown()">
-      Generate Markdown
+      <button onclick="generateTables()">
+      Generate Tables
       </button>
       <br>
       <br>
-      <textarea id="output" style="width: 550px; height: 200px;"></textarea>
+      <p>Copy the table below if you're creating a <b>new ticket.</b></p>
+      <textarea id="output" style="width: 550px; height: 100px;"></textarea>
+      <p>Copy the table below if you're updating an <b>existing ticket.</b></p>
+      <div id="tableOutput"></div>
   <script src="MOBTicket.js"></script>
   </body>
 </html>
