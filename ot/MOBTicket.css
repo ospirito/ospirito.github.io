@@ -44,4 +44,14 @@ td, th{
   padding: 5px;
 }
 
+fieldset {
+  max-width: 40%;
+  display: table;
+  margin-left: 4em;
+}
 
+fieldset > legend{
+  background-color: black;
+  color: white;
+  padding: 5px;
+}

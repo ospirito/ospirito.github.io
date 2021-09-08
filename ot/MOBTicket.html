@@ -15,15 +15,41 @@
       </div>
       
       <div class="question radio required">
-        <label>Web SDK or Native SDK?</label>
-        <input name="sdkVariant" type="radio" id="sdk_web"><label for="sdk_web">Web SDK</label>
-        <input name="sdkVariant" type="radio" id="sdk_native"><label for="sdk_native">Native SDK</label>
+        <label>Which SDK?</label>
+        <fieldset name="mobile">
+          <legend>Mobile</legend>
+          <input name="sdkVariant" type="radio" id="sdk_web"><label for="sdk_web">Web SDK</label>
+          <input name="sdkVariant" type="radio" id="sdk_native"><label for="sdk_native">Native SDK</label>
+          <input name="sdkVariant" type="radio" id="sdk_unity"><label for="sdk_unity">Unity SDK</label>
+          <input name="sdkVariant" type="radio" id="sdk_xamarin"><label for="sdk_xamarin">Xamarin SDK</label>
+        </fieldset>
+
+        <fieldset name="hybrid">
+          <legend>Hybrid Frameworks</legend>
+          <input name="sdkVariant" type="radio" id="sdk_react"><label for="sdk_react">React Native</label>
+          <input name="sdkVariant" type="radio" id="sdk_flutter"><label for="sdk_flutter">Flutter</label>
+          <input name="sdkVariant" type="radio" id="sdk_cordova"><label for="sdk_cordova">Cordova/Ionic</label>
+        </fieldset>
+        
+        <fieldset name="ctv">
+          <legend>Connected TV</legend>
+          <input name="sdkVariant" type="radio" id="sdk_tvos"><label for="sdk_tvos">tvOS</label>
+          <input name="sdkVariant" type="radio" id="sdk_androidtv"><label for="sdk_androidtv">Android/FireTV</label>
+          <input name="sdkVariant" type="radio" id="sdk_tizen"><label for="sdk_tizen">HTML5/Tizen SDK</label>
+          <input name="sdkVariant" type="radio" id="sdk_roku"><label for="sdk_roku">Roku</label>
+        </fieldset>
+        
       </div>
       
       <div class="question radio required">
         <label>Platform?</label>
-        <input name="platform" type="radio" id="sdk_ios"><label for="sdk_ios">iOS</label>
-        <input name="platform" type="radio" id="sdk_android"><label for="sdk_android">Android</label>
+        <input name="platform" type="radio" id="platform_ios"><label for="platform_ios">iOS</label>
+        <input name="platform" type="radio" id="platform_android"><label for="platform_android">Android</label>
+        <input name="platform" type="radio" id="platform_androidtv"><label for="platform_androidtv">Android TV</label>
+        <input name="platform" type="radio" id="platform_tvos"><label for="platform_tvos">tvOS</label>
+        <input name="platform" type="radio" id="platform_tizen"><label for="platform_tizen">Samsung Tizen</label>
+        <input name="platform" type="radio" id="platform_roku"><label for="platform_roku">Roku</label>
+        <input name="platform" type="radio" id="platform_firetv"><label for="platform_firetv">FireTV</label>
       </div>
       
       <div class="question text required">
