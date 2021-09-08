@@ -3,13 +3,19 @@
 function showHideQuestions() {
     let radio = document.querySelector("input[name='platform']:checked")
     switch (radio.id) {
-      case "sdk_ios":
+      case "platform_ios":
+      case "platform_tvos":
         document.querySelectorAll(".ios").forEach(j => j.classList.remove("hidden"))
         document.querySelectorAll(".android").forEach(j => j.classList.add("hidden"))
         break;
-      case "sdk_android":
+      case "platform_android":
+      case "platform_androidtv":
+      case "platform_firetv":
         document.querySelectorAll(".android").forEach(j => j.classList.remove("hidden"))
         document.querySelectorAll(".ios").forEach(j => j.classList.add("hidden"))
+        break;
+      default:
+        document.querySelectorAll(".ios, .android").forEach(j => j.classList.add("hidden"))
         break;
     }
   }
