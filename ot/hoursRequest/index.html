@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Bill Hours Request</title>
+    <script src="scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td id="email_lead">
+            <label for="lead">Your Lead's Name</label>
+          </td>
+          <td>
+            <select id="lead">
+              <option value = "" selected disabled>-- Select One --</option>
+              <option value="uaslam@onetrust.com">Umaira Aslam</option>
+              <option value="shemleben@onetrust.com">Samantha Hemleben</option>
+              <option value="sprabhu@onetrust.com">Shriya Prabu</option>
+              <option value="qtrinh@onetrust.com">Quy Trinh</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr id="field_consultant">
+          <td><label for="consultant">Consultant Name</label></td>
+          <td><input id="consultant" /></td>
+        </tr>
+
+        <tr id="field_client">
+          <td><label for="customerName">Client Name</label></td>
+          <td><input id="customerName" /></td>
+        </tr>
+        <tr id="field_milestoneURL">
+          <td><label for="milestone">Link to Milestone</label></td>
+          <td><input id="milestone" /></td>
+        </tr>
+        <tr id="field_hours">
+          <td><label for="hours">Number of Hours Requested</label></td>
+          <td><input id="hours" type="number" /></td>
+        </tr>
+        <tr id="field_endDate">
+          <td><label for="endDate">Expected End Date</label></td>
+          <td><input type="date" id="endDate" name="endDate" min="2021-01-01" /></td>
+        </tr>
+        <!-- <tr id="field_reason">
+          <td><label for="reasonCode">Reason for Overrun</label></td>
+          <td><select id="reasonCode">
+            <option value = "n/a" selected disabled>- Select One - </option>
+            <option value="Scope creep">Scope creep</option>
+            <option value="Not enough hours sold">Not enough hours sold to cover client's expectations</option>
+            <option value="Hand-Holding">Client needs additional hand-holding</option>
+            <option value="Hand-Holding">Client needs additional hand-holding</option>
+          </select></td>
+        </tr> -->
+        <tr id="field_notes">
+          <td><label for="notes">Additional Notes</label></td>
+          <td><textarea id="notes" type="textarea"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <button onclick="process()">Generate Email</button>
+            </td>
+        </tr>
+      </table>
+      
+    </div>
+  </body>
+</html>
