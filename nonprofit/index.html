@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free or Nearly Free Tech for Your Band & Nonprofit</title>
+  <meta name="description"
+    content="A curated directory of free or discounted tech tools, software, and platforms to help community bands and nonprofit organizations thrive.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Hero / Header Section -->
+    <header class="hero">
+      <div class="hero-badge-container">
+        <!-- SVG Circular Badge -->
+        <svg class="hero-badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+
+          <!-- Inner Orange Badge -->
+          <circle cx="100" cy="100" r="70" fill="#f26522" stroke="#000000" stroke-width="3" />
+
+          <!-- Arrow Pointing Up-Right (Rotated -30 deg) -->
+          <g transform="rotate(-30 100 100)">
+            <path d="M 68,85 L 115,85 L 115,65 L 150,100 L 115,135 L 115,115 L 68,115 Z" fill="#ffffff" stroke="#000000"
+              stroke-width="3" stroke-linejoin="miter" />
+          </g>
+
+
+        </svg>
+
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-title-wrap">
+          <h1 class="hero-title">Free</h1>
+          <span class="hero-handwritten">* or nearly free</span>
+        </div>
+        <h1 class="hero-title">tech for your band</h1>
+        <p class="hero-subtitle">Oliver Spirito • Atlanta Freedom Bands</p>
+      </div>
+    </header>
+
+    <!-- Canva CTA Banner -->
+    <section class="cta-banner" id="canva-cta">
+      <div class="cta-content">
+        <h2>Canva Presentation Slides</h2>
+        <p>Explore the original presentation containing additional context and recommendations.</p>
+      </div>
+      <a href="https://canva.link/50q9k7hmbb20094" target="_blank" rel="noopener noreferrer" class="cta-button"
+        id="canva-btn">
+        View Slides
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Main Recommendations Section -->
+    <main>
+      <div class="recommendations-header">
+        <h2 class="section-title" id="dir-title">Recommended Tools</h2>
+
+        <!-- Interactive Filters -->
+        <div class="filter-container" role="tablist" aria-label="Tool Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All
+            Tools</button>
+          <button class="filter-btn" data-filter="admin" role="tab" aria-selected="false"
+            id="filter-admin">Administrative</button>
+          <button class="filter-btn" data-filter="finance" role="tab" aria-selected="false"
+            id="filter-finance">Financial</button>
+          <button class="filter-btn" data-filter="marketing" role="tab" aria-selected="false"
+            id="filter-marketing">Advertising & Marketing</button>
+          <button class="filter-btn" data-filter="creative" role="tab" aria-selected="false"
+            id="filter-creative">Creative & Social</button>
+        </div>
+      </div>
+
+      <!-- Recommendation Cards Grid -->
+      <div class="tools-grid" id="tools-grid">
+
+        <!-- Card 1: ClickUp -->
+        <div class="tool-card" data-category="admin" id="card-clickup">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Briefcase Icon for Admin -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free Tier</span>
+          </div>
+          <h3 class="tool-title">ClickUp</h3>
+          <ul class="tool-features">
+            <li>Task tracking</li>
+            <li>Recurring tasks with notifications</li>
+            <li>Wiki-style documentation</li>
+            <li>Amazing free plan</li>
+          </ul>
+          <a href="https://clickup.com" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-clickup">Get ClickUp</a>
+        </div>
+
+        <!-- Card 2: NotebookLM -->
+        <div class="tool-card" data-category="admin" id="card-notebooklm">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">100% Free</span>
+          </div>
+          <h3 class="tool-title">Notebook LM</h3>
+          <ul class="tool-features">
+            <li>Build a repository of operational documents</li>
+            <li>Create overviews, draft amendments, ask questions</li>
+            <li>Fact-check during board meetings</li>
+          </ul>
+          <a href="https://notebooklm.google" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-notebooklm">Open NotebookLM</a>
+        </div>
+
+        <!-- Card 3: Zoho Sign -->
+        <div class="tool-card" data-category="admin" id="card-zohosign">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Generous Free Tier</span>
+          </div>
+          <h3 class="tool-title">Zoho Sign</h3>
+          <ul class="tool-features">
+            <li>Free, easy contract e-signature routing</li>
+            <li>Generous free limits</li>
+          </ul>
+          <a href="https://www.zoho.com/sign/" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-zohosign">Start Signing</a>
+        </div>
+
+        <!-- Card 4: Spond -->
+        <div class="tool-card" data-category="admin" id="card-spond">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free App</span>
+          </div>
+          <h3 class="tool-title">Spond</h3>
+          <ul class="tool-features">
+            <li>Event-first app design</li>
+            <li>Separates social from admin tools</li>
+            <li>Payment collection option (premium)</li>
+            <li>Multiple groups and subgroups</li>
+            <li>Lightweight membership database to hold waivers & info</li>
+          </ul>
+          <a href="https://spond.com" target="_blank" rel="noopener noreferrer" class="tool-link" id="link-spond">Get
+            Spond</a>
+        </div>
+
+        <!-- Card 5: Band App -->
+        <div class="tool-card" data-category="admin" id="card-bandapp">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free App</span>
+          </div>
+          <h3 class="tool-title">Band App</h3>
+          <ul class="tool-features">
+            <li>Mobile-optimized, with online/desktop option</li>
+            <li>Social-first app design</li>
+          </ul>
+          <a href="https://band.us" target="_blank" rel="noopener noreferrer" class="tool-link" id="link-bandapp">Open
+            Band</a>
+        </div>
+
+        <!-- Card 6: Google Workspace -->
+        <div class="tool-card" data-category="admin" id="card-google">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free for Nonprofits</span>
+          </div>
+          <h3 class="tool-title">Google Workspace</h3>
+          <ul class="tool-features">
+            <li>Gmail, Docs, Meet, and more</li>
+            <li>Free for nonprofits</li>
+          </ul>
+          <a href="https://www.google.com/nonprofits/" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-google">Apply Now</a>
+        </div>
+
+        <!-- Card 7: Ramp -->
+        <div class="tool-card" data-category="finance" id="card-ramp">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Dollar Icon for Finance -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="18"></line>
+                <path d="M15 9H10.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H9"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">1.5% Cashback</span>
+          </div>
+          <h3 class="tool-title">Ramp</h3>
+          <ul class="tool-features">
+            <li>No personal guarantor business credit</li>
+            <li>Earns 1.5% cash back</li>
+            <li>Unlimited physical and virtual cards</li>
+            <li>Seamless QuickBooks integration</li>
+          </ul>
+          <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" class="tool-link" id="link-ramp">Get
+            Ramp</a>
+        </div>
+
+        <!-- Card 8: Givebutter -->
+        <div class="tool-card" data-category="finance" id="card-givebutter">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Dollar Icon for Finance -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="18"></line>
+                <path d="M15 9H10.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H9"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Freemium</span>
+          </div>
+          <h3 class="tool-title">Givebutter</h3>
+          <ul class="tool-features">
+            <li>Fully featured nonprofit fundraising software</li>
+            <li>Donor management and email campaigns</li>
+            <li>Freemium model, but you can get away with the free version</li>
+            <li>Relies on "tips" from donors for revenue</li>
+          </ul>
+          <a href="https://givebutter.com" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-givebutter">Visit Givebutter</a>
+        </div>
+
+        <!-- Card 9: Zeffy -->
+        <div class="tool-card" data-category="finance" id="card-zeffy">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Dollar Icon for Finance -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="18"></line>
+                <path d="M15 9H10.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H9"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free</span>
+          </div>
+          <h3 class="tool-title">Zeffy</h3>
+          <ul class="tool-features">
+            <li>Fully featured nonprofit fundraising software</li>
+            <li>Zero credit card processing fees</li>
+            <li>Relies on "tips" from donors for revenue</li>
+          </ul>
+          <a href="https://www.zeffy.com" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-zeffy">Visit Zeffy</a>
+        </div>
+
+        <!-- Card 10: TechSoup -->
+        <div class="tool-card" data-category="finance" id="card-techsoup">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Dollar Icon for Finance -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="18"></line>
+                <path d="M15 9H10.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H9"></path>
+              </svg>
+            </div>
+            <span class="tool-tag discount">Deep Discount</span>
+          </div>
+          <h3 class="tool-title">TechSoup</h3>
+          <ul class="tool-features">
+            <li>Get non-profit software licenses</li>
+            <li>Example: QuickBooks Online Plus for $80/year</li>
+          </ul>
+          <a href="https://www.techsoup.org" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-techsoup">Join TechSoup</a>
+        </div>
+
+
+        <!-- Card 11: Google Ads Grants -->
+        <div class="tool-card" data-category="marketing" id="card-google-ads">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Megaphone Icon for Marketing -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">$10,000/mo Grant</span>
+          </div>
+          <h3 class="tool-title">Google Ads Grants</h3>
+          <ul class="tool-features">
+            <li>$10,000 per month in free Search Ads</li>
+            <li>Best for recruiting and generating website traffic</li>
+          </ul>
+          <a href="https://www.google.com/grants/" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-google-ads">Apply for Grant</a>
+        </div>
+
+        <!-- Card 12: Bonfire -->
+        <div class="tool-card" data-category="marketing" id="card-bonfire">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <span class="tool-tag free">Effortless swag</span>
+          </div>
+          <h3 class="tool-title">Bonfire</h3>
+          <ul class="tool-features">
+            <li>Zero-stress band swag (T-shirts, mugs, joggers)</li>
+            <li>Drop shipping -- no inventory on hand</li>
+            <li>Handles printing, shipping, and customer service for you</li>
+            <li>Generous non-profit discount</li>
+          </ul>
+          <a href="https://www.bonfire.com" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-bonfire">Create Swag</a>
+        </div>
+
+        <!-- Card 13: Canva -->
+        <div class="tool-card" data-category="creative" id="card-canva">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <!-- Palette Icon for Creative -->
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.0331 19.1745 5.09082 19.4328 5.00212 19.664C4.78047 20.242 4.65651 20.8654 4.65651 21.515C4.65651 21.7829 4.87366 22 5.1415 22H12Z">
+                </path>
+                <circle cx="7.5" cy="10.5" r="1.5"></circle>
+                <circle cx="11.5" cy="7.5" r="1.5"></circle>
+                <circle cx="16.5" cy="9.5" r="1.5"></circle>
+                <circle cx="15.5" cy="14.5" r="1.5"></circle>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free Pro Sub</span>
+          </div>
+          <h3 class="tool-title">Canva</h3>
+          <ul class="tool-features">
+            <li>Easy-to-use visual editor for graphics and videos</li>
+            <li>Free Pro subscription for nonprofits</li>
+            <li>Fantastic royalty-free stock library</li>
+          </ul>
+          <a href="https://www.canva.com/pro/nonprofits/" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-canva">Get Pro Free</a>
+        </div>
+
+        <!-- Card 14: Linktree -->
+        <div class="tool-card" data-category="creative" id="card-linktree">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.0331 19.1745 5.09082 19.4328 5.00212 19.664C4.78047 20.242 4.65651 20.8654 4.65651 21.515C4.65651 21.7829 4.87366 22 5.1415 22H12Z">
+                </path>
+                <circle cx="7.5" cy="10.5" r="1.5"></circle>
+                <circle cx="11.5" cy="7.5" r="1.5"></circle>
+                <circle cx="16.5" cy="9.5" r="1.5"></circle>
+                <circle cx="15.5" cy="14.5" r="1.5"></circle>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free Plan</span>
+          </div>
+          <h3 class="tool-title">Linktree</h3>
+          <ul class="tool-features">
+            <li>Centralized link management</li>
+            <li>"Link in bio" feature</li>
+            <li>Create one QR code and reuse across your assets</li>
+          </ul>
+          <a href="https://linktr.ee/" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-linktree">Create Linktree</a>
+        </div>
+
+        <!-- Card 15: Metricool -->
+        <div class="tool-card" data-category="creative" id="card-metricool">
+          <div class="tool-header">
+            <div class="tool-logo-container">
+              <svg class="tool-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.0331 19.1745 5.09082 19.4328 5.00212 19.664C4.78047 20.242 4.65651 20.8654 4.65651 21.515C4.65651 21.7829 4.87366 22 5.1415 22H12Z">
+                </path>
+                <circle cx="7.5" cy="10.5" r="1.5"></circle>
+                <circle cx="11.5" cy="7.5" r="1.5"></circle>
+                <circle cx="16.5" cy="9.5" r="1.5"></circle>
+                <circle cx="15.5" cy="14.5" r="1.5"></circle>
+              </svg>
+            </div>
+            <span class="tool-tag free">Free Tier</span>
+          </div>
+          <h3 class="tool-title">Metricool</h3>
+          <ul class="tool-features">
+            <li>Schedule, automate, and measure social media posts</li>
+            <li>Direct integration with Canva</li>
+            <li>Works with YouTube, TikTok, Instagram, Facebook</li>
+          </ul>
+          <a href="https://metricool.com" target="_blank" rel="noopener noreferrer" class="tool-link"
+            id="link-metricool">Sign Up</a>
+        </div>
+
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Created by <a href="../" id="footer-owner">Oliver Spirito</a> • Atlanta Freedom Bands • &copy; 2026</p>
+    </footer>
+
+  </div>
+
+  <!-- Client-side Javascript for Category Filtering -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const toolCards = document.querySelectorAll('.tool-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active state from all buttons
+          filterButtons.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+
+          // Set active state on clicked button
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const category = btn.getAttribute('data-filter');
+
+          toolCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              // Show card
+              card.style.display = 'flex';
+              // Triggers a repaint so opacity transition is smooth
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translate(0, 0) scale(1)';
+              }, 10);
+            } else {
+              // Fade out card
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.95)';
+              // Hide after transition duration
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 200);
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
