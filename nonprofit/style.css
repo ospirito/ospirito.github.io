@@ -174,6 +174,13 @@ body {
   box-shadow: 2px 2px 0px var(--border);
 }
 
+.cta-actions {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
 /* Recommendations Section */
 .recommendations-header {
   display: flex;
@@ -410,6 +417,13 @@ footer a:hover {
     text-align: center;
     gap: 1.5rem;
     padding: 1.5rem;
+  }
+
+  .cta-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .cta-button {
